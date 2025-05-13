@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Animations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="animate-title">Apex Playground</h1>
+            <div class="theme-switch">
+                <label class="switch">
+                    <input type="checkbox" id="themeToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span>Dark Mode</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="animation-section">
+                <h2>Animation Controls</h2>
+                <div class="animation-box" id="animationBox">
+                    <div class="animated-element"></div>
+                </div>
+                <div class="controls">
+                    <button id="bounceBtn" class="control-btn">Bounce</button>
+                    <button id="rotateBtn" class="control-btn">Rotate</button>
+                    <button id="fadeBtn" class="control-btn">Fade</button>
+                </div>
+            </section>
+
+            <section class="preferences-section">
+                <h2>User Preferences</h2>
+                <form id="preferencesForm">
+                    <div class="form-group">
+                        <label for="userName">Name:</label>
+                        <input type="text" id="userName" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="favoriteColor">Favorite Color:</label>
+                        <input type="color" id="favoriteColor">
+                    </div>
+                    <button type="submit" class="save-btn">Save Preferences</button>
+                </form>
+                <div id="preferencesDisplay" class="preferences-display"></div>
+            </section>
+
+            <section class="counter-section">
+                <h2>Visit Counter</h2>
+                <div class="counter-display">
+                    <span>You've visited this page </span>
+                    <span id="visitCount">0</span>
+                    <span> times</span>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
